@@ -9,9 +9,11 @@ import { ProfileNavigator } from './profile.navigator';
 
 const Tab = createBottomTabNavigator();
 
+
+// https://oblador.github.io/react-native-vector-icons/
 const TAB_ICON = {
-  Restaurants: "md-restaurant",
-  Test: "md-map",
+  Profile: "md-person",
+  ExpenseHistory: "aperture",
   Settings: "md-settings",
 };
 
@@ -20,7 +22,7 @@ const Settings = () => (
     <Text>Settings</Text>
   </SafeArea>
 );
-const Test = () => (
+const ExpenseHistory = () => (
   <SafeArea>
     <Text>Test</Text>
   </SafeArea>
@@ -40,12 +42,12 @@ export const AppNavigator = () => (
     <Tab.Navigator
       screenOptions={createScreenOptions}
       tabBarOptions={{
-        activeTintColor: "tomato",
+        activeTintColor: "purple",
         inactiveTintColor: "gray",
       }}
     >
-      <Tab.Screen name="Restaurants" component={ProfileNavigator} />
-      <Tab.Screen name="Test" component={Test} />
+      <Tab.Screen name="Profile" component={ProfileNavigator} />
+      <Tab.Screen name="ExpenseHistory" component={ExpenseHistory} />
       <Tab.Screen name="Settings" component={Settings} />
     </Tab.Navigator>
   </NavigationContainer>
