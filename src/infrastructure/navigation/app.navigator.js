@@ -14,17 +14,29 @@ const Tab = createBottomTabNavigator();
 const TAB_ICON = {
   Profile: "md-person",
   ExpenseHistory: "aperture",
-  Settings: "md-settings",
+  Goals: "podium-sharp",
+  AddExpense: "leaf",
+  Month: "print-sharp"
 };
 
-const Settings = () => (
+const Goals = () => (
   <SafeArea>
-    <Text>Settings</Text>
+    <Text>Goals</Text>
   </SafeArea>
 );
+const AddExpense = () => (
+  <SafeArea>
+    <Text>Add Expense</Text>
+  </SafeArea>
+)
 const ExpenseHistory = () => (
   <SafeArea>
     <Text>Test</Text>
+  </SafeArea>
+);
+const Month = () => (
+  <SafeArea>
+    <Text>Month</Text>
   </SafeArea>
 );
 
@@ -46,9 +58,11 @@ export const AppNavigator = () => (
         inactiveTintColor: "gray",
       }}
     >
-      <Tab.Screen name="Profile" component={ProfileNavigator} />
+    <Tab.Screen name="Goals" component={Goals} />
       <Tab.Screen name="ExpenseHistory" component={ExpenseHistory} />
-      <Tab.Screen name="Settings" component={Settings} />
+      <Tab.Screen name="AddExpense" component={AddExpense} />
+      <Tab.Screen name="Month" component={Month} />
+      <Tab.Screen name="Profile" component={ProfileNavigator} />
     </Tab.Navigator>
   </NavigationContainer>
 );
