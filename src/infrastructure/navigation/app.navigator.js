@@ -13,10 +13,10 @@ const Tab = createBottomTabNavigator();
 // https://oblador.github.io/react-native-vector-icons/
 const TAB_ICON = {
   Profile: "md-person",
-  ExpenseHistory: "aperture",
+  History: "aperture",
   Goals: "podium-sharp",
-  AddExpense: "leaf",
-  Month: "print-sharp"
+  Budget: "leaf",
+  Flow: "swap-vertical"
 };
 
 const Goals = () => (
@@ -24,9 +24,9 @@ const Goals = () => (
     <Text>Goals</Text>
   </SafeArea>
 );
-const AddExpense = () => (
+const Budget = () => (
   <SafeArea>
-    <Text>Add Expense</Text>
+    <Text>Budget</Text>
   </SafeArea>
 )
 const ExpenseHistory = () => (
@@ -34,9 +34,9 @@ const ExpenseHistory = () => (
     <Text>Test</Text>
   </SafeArea>
 );
-const Month = () => (
+const Flow = () => (
   <SafeArea>
-    <Text>Month</Text>
+    <Text>Flow</Text>
   </SafeArea>
 );
 
@@ -58,11 +58,11 @@ export const AppNavigator = () => (
         inactiveTintColor: "gray",
       }}
     >
-    <Tab.Screen name="Goals" component={Goals} />
-      <Tab.Screen name="ExpenseHistory" component={ExpenseHistory} />
-      <Tab.Screen name="AddExpense" component={AddExpense} />
-      <Tab.Screen name="Month" component={Month} />
       <Tab.Screen name="Profile" component={ProfileNavigator} />
+      <Tab.Screen name="Flow" component={Flow} />
+      <Tab.Screen name="Budget" component={Budget} />
+      <Tab.Screen name="Goals" component={Goals} />
+      <Tab.Screen name="History" component={ExpenseHistory} />
     </Tab.Navigator>
   </NavigationContainer>
 );

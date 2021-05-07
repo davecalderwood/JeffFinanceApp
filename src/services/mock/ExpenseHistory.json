@@ -1,0 +1,52 @@
+{
+    "expenses": [
+        {
+            "amount": 120.95,
+            "category": "Groceries",
+            "date": "2021-05-10T00:00:00.000Z",
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor..."
+        },
+        {
+            "amount": 25.80,
+            "category": "Gas",
+            "date": "2021-05-11T00:00:00.000Z",
+            "comment": "Gas"
+        },
+        {
+            "amount": 99.99,
+            "category": "Miscellaneous",
+            "date": "2021-05-01T00:00:00.000Z",
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor..."
+        },
+        {
+            "amount": 40.20,
+            "category": "Groceries",
+            "date": "2021-05-10T00:00:00.000Z",
+            "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor..."
+        },
+        {
+            "amount": 25.11,
+            "category": "Gas",
+            "date": "2021-04-10T00:00:00.000Z",
+            "comment": "Gas"
+        },
+        {
+            "amount": 600.91,
+            "category": "Miscellaneous",
+            "date": "2021-04-10T00:00:00.000Z",
+            "comment": "Flight to Austin for family trip!"
+        },
+        {
+            "amount": 55.52,
+            "category": "Groceries",
+            "date": "2021-04-22T00:00:00.000Z",
+            "comment": "Groceries"
+        },
+        {
+            "amount": 44.25,
+            "category": "Fast Food",
+            "date": "2021-04-18T00:00:00.000Z",
+            "comment": "Date night dinner"
+        }
+    ]
+}
