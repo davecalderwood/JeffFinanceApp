@@ -6,6 +6,7 @@ import { Text } from "react-native";
 import { SafeArea } from "../../components/utility/safe-area.component";
 
 import { ProfileNavigator } from './profile.navigator';
+import { BudgetNavigator } from './budget.navigator';
 
 const Tab = createBottomTabNavigator();
 
@@ -24,11 +25,6 @@ const Goals = () => (
     <Text>Goals</Text>
   </SafeArea>
 );
-const Budget = () => (
-  <SafeArea>
-    <Text>Budget</Text>
-  </SafeArea>
-)
 const ExpenseHistory = () => (
   <SafeArea>
     <Text>Test</Text>
@@ -60,7 +56,7 @@ export const AppNavigator = () => (
     >
       <Tab.Screen name="Profile" component={ProfileNavigator} />
       <Tab.Screen name="Flow" component={Flow} />
-      <Tab.Screen name="Budget" component={Budget} />
+      <Tab.Screen name="Budget" component={BudgetNavigator} />
       <Tab.Screen name="Goals" component={Goals} />
       <Tab.Screen name="History" component={ExpenseHistory} />
     </Tab.Navigator>
