@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import { View } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 import { TextInput } from 'react-native-paper';
-
 export const AddExpenseForm = () => {
   const [text, setText] = React.useState('');
 
@@ -20,12 +19,13 @@ export const AddExpenseForm = () => {
           right={<TextInput.Icon name="currency-usd" />} />
 
         <Picker
+          style={{ height: 50, width: "100%" }}
           selectedValue={expense}
           onValueChange={currentExpense => setExpense(currentExpense)}>
-          <Picker.Item label="Fast Food" value="Fast Food" />
-          <Picker.Item label="Groceries" value="Groceries" />
-          <Picker.Item label="Gas" value="Gas" />
-          <Picker.Item label="Miscellaneous" value="Miscellaneous" />
+          <Picker.Item label="Fast Food" value="1" />
+          <Picker.Item label="Groceries" value="2" />
+          <Picker.Item label="Gas" value="3" />
+          <Picker.Item label="Miscellaneous" value="4" />
         </Picker>
       </View>
     </View>

@@ -4,8 +4,8 @@ import { SafeArea } from "../../../components/utility/safe-area.component";
 import { AddExpenseForm } from '../components/add-expense-form';
 
 const ExpenseForm = styled.View`
-  margin: auto;
-  width: 90%;
+margin: 0 auto;
+width: 90%;
 `;
 
 export const AddExpenseScreen = () => {
